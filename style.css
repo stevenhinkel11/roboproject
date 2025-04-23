@@ -1,63 +1,88 @@
 body {
-  background-color: #001f3f;
+  background-color: #1a1a1a;
   color: white;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.fredbot-face {
+#fredbot {
+  margin-top: 50px;
+}
+
+#face {
   background-color: navy;
-  border-radius: 20px;
   width: 200px;
   height: 200px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto 20px;
+  border-radius: 100px;
+  position: relative;
 }
 
-.eyes {
-  width: 60%;
-  height: 20px;
-  background: repeating-linear-gradient(
-    to right,
-    white,
-    white 5px,
-    navy 5px,
-    navy 10px
-  );
-  margin-bottom: 10px;
+.eye {
+  width: 10px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+}
+
+.left {
+  left: 50px;
+}
+
+.right {
+  right: 50px;
 }
 
 .mouth {
-  width: 100px;
+  width: 60px;
   height: 20px;
+  background-color: white;
+  position: absolute;
+  bottom: 50px;
+  left: 70px;
+  border-radius: 10px;
+}
+
+/* Expressions */
+
+.neutral .mouth {
+  border-radius: 10px;
+}
+
+.smiling .mouth {
+  height: 30px;
+  border-radius: 0 0 30px 30px;
+}
+
+.laughing .mouth {
+  height: 40px;
+  width: 80px;
+  background-color: white;
+  border-radius: 0 0 40px 40px;
+  bottom: 40px;
+  left: 60px;
+}
+
+.crying .mouth {
+  height: 10px;
   border-radius: 50%;
+  background-color: lightblue;
+}
+
+.sneering .mouth {
+  transform: rotate(-20deg);
   background-color: white;
 }
 
-.chat-container {
-  width: 300px;
+.scared .mouth {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  bottom: 60px;
+  left: 85px;
 }
 
-#chat-box {
-  background-color: #003366;
-  border: 1px solid white;
-  padding: 10px;
-  height: 200px;
-  overflow-y: scroll;
-  margin-bottom: 10px;
-}
-
-input {
-  width: 200px;
-  padding: 5px;
-}
-
-button {
-  padding: 5px 10px;
-}
