@@ -4,20 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FredBot</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="fredbot-face">
-    <div class="eyes"></div>
-    <div class="mouth"></div>
+  <div id="fredbot">
+    <div id="face" class="neutral">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="mouth"></div>
+    </div>
+    <button onclick="talkToFredBot()">Talk to FredBot</button>
   </div>
 
-  <div class="chat-container">
-    <div id="chat-box"></div>
-    <input id="user-input" type="text" placeholder="Say something to FredBot..."/>
-    <button onclick="sendMessage()">Send</button>
-  </div>
-
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
