@@ -29,7 +29,11 @@ function talkToFredBot() {
   } else if (msg.includes("scared")) {
     response = "I'm scared! 😱";
     changeExpression('scared');
-  } else {
+  }  else if (msg.includes("love")) {
+    response = "I love you too, Wilder 😱";
+    changeExpression('scared');
+  } 
+  else {
     response = "I don't understand that command. Can I help with something else?";
     changeExpression('neutral');
   }
