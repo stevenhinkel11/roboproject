@@ -34,7 +34,6 @@ function talkToFredBot() {
     changeExpression('neutral');
   }
 
-  // Use SpeechSynthesis to make FredBot talk
   const speech = new SpeechSynthesisUtterance(response);
   speechSynthesis.speak(speech);
 }
