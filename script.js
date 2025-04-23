@@ -12,7 +12,7 @@ function talkToFredBot() {
     response = "I believe in you too!";
     changeExpression('smiling');
   } else if (msg.includes("mean")) {
-    response = "That hurt my feelings... 😢";
+    response = "That hurt my feelings... ";
     changeExpression('crying');
   } else if (msg.includes("cute")) {
     response = "How cute!";
@@ -27,10 +27,10 @@ function talkToFredBot() {
     response = "Oh yeah!";
     changeExpression('smiling');
   } else if (msg.includes("scared")) {
-    response = "I'm scared! 😱";
+    response = "I'm scared!";
     changeExpression('scared');
   }  else if (msg.includes("love")) {
-    response = "I love you too, Wilder 😱";
+    response = "I love you too, Wilder";
     changeExpression('scared');
   } 
   else {
